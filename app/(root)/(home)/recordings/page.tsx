@@ -1,3 +1,4 @@
+import CallList from '@/components/CallList'
 import React from 'react'
 
 function Recording() {
@@ -6,6 +7,8 @@ function Recording() {
         <h1 className='text-3xl font-bold'>
             Recording
         </h1>
+
+        <CallList type='recordings'/>
 
     </section>
   )

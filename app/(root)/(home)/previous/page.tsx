@@ -1,3 +1,4 @@
+import CallList from '@/components/CallList'
 import React from 'react'
 
 function PreviousRoom() {
@@ -6,6 +7,8 @@ function PreviousRoom() {
         <h1 className='text-3xl font-bold'>
             PreviousRoom
         </h1>
+
+        <CallList type='ended'/>
 
     </section>
   )
