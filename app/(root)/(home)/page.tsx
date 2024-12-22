@@ -5,24 +5,8 @@ import React from "react";
 const Home = () => {
   const now = new Date();
 
-  const weekday = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  const month=['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-  const time = `${now.toLocaleString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-  })}`;
-
-  const date = `${weekday[now.getDay()]},${month[now.getMonth()]} ${now.getDate()},${now.getFullYear()}`;
+  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
 
   return (
     <section className="flex size-full flex-col gap-5 text-white">

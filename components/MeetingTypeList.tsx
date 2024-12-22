@@ -105,7 +105,7 @@ const MeetingTypeList = () => {
         title="Schedule Meeting"
         description="Plan your meeting"
         className="bg-purple-1"
-        handleClick={() => router.push("/recordings")}
+        handleClick={() => setMeetingState('isScheduleMeeting')}
       />
       <HomeCard
         img="/icons/recordings.svg"
