@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: "connectHub",
+  title: "Chitrasamvad",
   description: "video calling app",
   icons:{
     icon:'/icons/logo.svg'
